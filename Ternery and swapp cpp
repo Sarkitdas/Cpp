@@ -1,0 +1,20 @@
+#include<cstdio>
+#include<iostream>
+#include<string>
+#include<algorithm>
+
+using namespace std;
+int main()
+{
+    int T,n,m;
+    string result;
+	scanf("%d",&T);
+	while(T--){
+		scanf("%d%d",&n,&m);
+		//if(n>m) std::swap(n,m);  Swapp
+		result=(n>m)?"Large Number":"Small Number";  //if(n>m) result=Large; else result=small;
+		cout<<result<<endl;
+
+	}
+	return 0;
+}
