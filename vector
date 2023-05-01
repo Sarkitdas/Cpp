@@ -1,0 +1,66 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    //vector <type> name (number of elements);
+    vector <int> vs;
+    vs.push_back(1);
+    vs.push_back(5);
+    vs.push_back(3);
+    vs.insert(vs.begin()+1,7); //2 nmber index added 7
+
+    //loop
+    for(int data:vs)
+        cout<<data<<" ";
+    cout<<endl;
+
+    //**
+
+    cout<<"size: "<<vs.size()<<endl;
+    cout<<"first: "<<vs.front()<<endl; //first data
+    cout<<"last: "<<vs.back()<<endl; //last data
+    cout<<"4th number index: "<<vs[3]<<endl; //4th index data
+
+    //**
+
+    //Update
+    cout<<"Update in 4th index: ";
+    vs[3]=9;
+
+    for(int data:vs)
+        cout<<data<<" ";
+    cout<<endl;
+    //**
+
+    //swaping
+    vector <int> vs2={1,5,7,3,9};
+    vs.swap(vs2);
+
+    for(int data2:vs)
+        cout<<data2<<" ";
+    cout<<endl;
+
+    //delete
+    //vs.pop_back(); //last
+
+    //vs.clear();  //total clear
+    cout<<"After deleted 3rd index: ";
+    vs.erase(vs.begin()+2); //delete 3rd index
+
+    for(int data2:vs)
+        cout<<data2<<" ";
+    cout<<endl;
+
+    //**
+
+
+    for(int data:vs2)
+        cout<<data<<" ";
+    cout<<endl;
+
+
+
+    return 0;
+}
