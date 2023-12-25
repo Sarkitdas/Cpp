@@ -1,0 +1,14 @@
+class Solution {
+public:
+    string numDecodings(string s) {
+
+        return s;   //return 12 to the result;
+    }
+};
+
+int main() {
+    Solution obj;  //creating object class to construction;
+    string result = obj.numDecodings("12");  //store result=12;
+    cout << result << endl;
+    return 0;
+}
