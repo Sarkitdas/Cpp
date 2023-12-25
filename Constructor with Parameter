@@ -7,7 +7,7 @@ public:
 };
 
 int main() {
-    Solution obj;  //creating object class to construction;
+    Solution obj;  //creating object class to constructor;
     string result = obj.numDecodings("12");  //store result=12;
     cout << result << endl;
     return 0;
