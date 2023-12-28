@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string str = "aaaaabbbbbbaacd";
+    sort(str.begin(), str.end());
+
+    string s=str;
+    // Using unique() method
+    auto res = unique(s.begin(), s.end());
+    s.erase(res, s.end());   //remove duplicate element from s string;
+
+    cout << s << endl;  
+    cout<<str<<endl;
+
+    return 0;
+}
+
